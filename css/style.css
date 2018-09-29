@@ -1,0 +1,70 @@
+body {
+    background-color: #5fd191;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+
+.navigator-collapse {
+    margin-top: 20px;
+}
+
+.nav-bar {
+    text-align: right;
+}
+.nav-bar ul {
+    display: none;
+    list-style: none;
+}
+.nav-bar a {
+    color: black;
+}
+
+
+
+
+
+.signup {
+    text-align: center;
+}
+
+.username {
+    margin-right: 5px;
+}
+
+.signup input {
+    border-radius: 6px;
+}
+
+.footer-nav {
+    background-color: green;
+    text-align: left;
+    color: white;
+}
+
+.footer-nav a {
+    color: white;
+}
+
+.footer-nav ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav p {
+    font-size: 10px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-right {
+    text-align: right;
+}
