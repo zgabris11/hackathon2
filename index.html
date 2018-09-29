@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img class="img-responsive" src="hackathon.jpg" alt="">
+            </div>
+        </div>
+        <div class="row nav-bar">
+            <div class="col-sm-12">
+                <div class="navigator-collapse">
+                    <a href="#" class="navigator-collapse-button"><img src="http://placehold.it/30x30" alt=""></a>
+                </div>
+                <ul class="nav-bar-content">
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="market">Market</a></li>
+                    <li><a href="realtors">Realtors</a></li>
+                    <li><a href="tinder.html">Tinder</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 about">
+                <h1>About</h1>
+                <p>Cubby is a web app that is made by people in the market to buy houses for people to buy houses. It started with the idea to be able to track houses that you have visited and find realtors in your area. We will set you up with a realtor and get you the asking prices for houses. You will be able to visit the houses and take pictures leave personal notes for yourself and record the pros and cons of owning the house in real time.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="market">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d431210.3381960455!2d-90.46222129592678!3d32.396897918989495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle+maps!5e0!3m2!1sen!2sus!4v1538183357022" width="290" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Realtors</h2>
+            </div>
+            <div class="col-12">
+                <img src="http://placehold.it/290x290?text=Zandrya+Gabris" alt="">
+            </div>
+            <div class="col-12">
+                <p>Zandrya is an up and coming realtor eager to make find your dream home.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="http://placehold.it/290x290?text=Zandrya+Gabris" alt="">
+            </div>
+            <div class="col-12">
+                <p>Zandrya is an up and coming realtor eager to make find your dream home.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="http://placehold.it/290x290?text=Zandrya+Gabris" alt="">
+            </div>
+            <div class="col-12">
+                <p>Zandrya is an up and coming realtor eager to make find your dream home.</p>
+            </div>
+        </div>
+        <div class="row footer-nav">
+            <div class="col-4">
+                <ul>
+                    <li><a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#" title="Github"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-8 footer-right">
+                <p>Copyright &copy; Ethan Daniels LLC</p>
+            </div>
+        </div>
+    </div>    
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+    <script>
+        $(document).ready(function(){
+            $( ".navigator-collapse-button" ).click(function( event ) {
+                event.preventDefault();
+            });
+            $(function() {
+                $('.navigator-collapse-button').click(function() {
+                    $('.nav-bar-content').toggle();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
